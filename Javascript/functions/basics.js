@@ -1,8 +1,17 @@
 // simple function
 
-function addition(a,b){
+// function addition(a, b){
+//     var r = a + b;
+//     console.log(`${a} + ${b} equals: ${r}`);
+// }
+
+// addition(10,8);
+
+
+function additionReturn(a, b){
     var r = a + b;
-    console.log(`${a} + ${b} equals: ${r}`);
+    return r;
 }
 
-addition(10,8);
+console.log(`Addition result: ${additionReturn(10,8)}`);
+
