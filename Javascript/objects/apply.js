@@ -16,5 +16,3 @@ let person2 = {
 let array = ['ll@mail.com', 30] // the difference between call & apply is that '.apply' method expects an array
 console.log(person1.fullName.apply(person2, array));
 
-
-
