@@ -14,3 +14,8 @@ console.log(p.fullName());
 
 let m = new Person('Maria', 'Magdalena', 'mm@gmail.com');
 console.log(m.fullName());
+
+
+// in order to add a new object attribute out of the constructor, we use prototype
+Person.prototype.tel = '5512345678'
+// previous line will add the '5512345678' number in any onistance of "Person"
