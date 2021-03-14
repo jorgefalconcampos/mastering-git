@@ -38,10 +38,14 @@ class Employee extends Person{
         this._department = department;
     }
 
+    fullName(){
+        return this._name + ' ' + this._last_name;
+    }
+
 }
 
 
 let employee1 = new Employee('Ernesto', 'Hernández', 'IT');
 
 
-console.log(employee1);
+console.log(employee1.fullName());
