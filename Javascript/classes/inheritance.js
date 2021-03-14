@@ -20,6 +20,10 @@ class Person{
         this._last_name = apellido;
     }
 
+    fullName(){
+        return this._name + ' ' + this._last_name;
+    }
+
 }
 
 
@@ -39,7 +43,8 @@ class Employee extends Person{
     }
 
     fullName(){
-        return this._name + ' ' + this._last_name;
+        // return this._name + ' ' + this._last_name + ' - ' + this._department;
+        return super.fullName() + ' - ' + this._department
     }
 
 }
