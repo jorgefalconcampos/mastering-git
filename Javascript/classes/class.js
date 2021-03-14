@@ -12,7 +12,6 @@ class Person{
         this._name = nombre;
     }
 
-
     get last_name(){
         return this._last_name;
     }
