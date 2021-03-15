@@ -4,10 +4,16 @@ class Person{
 
     email = "default_email@mail.com" // object attribute
 
+    // this will simulates a static const in JS
+    static get MAX_OBJ(){
+        return 5;
+    }
+
     constructor(name, last_name){
         this._name = name;
         this._last_name = last_name;
-        Person.counter++;
+        this.personID = ++Person.counter;
+        // Person.counter++;
     }
 
     get name(){
@@ -34,12 +40,15 @@ class Person{
         console.log(`Hey, hello ${person.name} ${person.last_name}!`)
     }
 
+    showData(){
+        return  this.personID + ' ' + this._name + ' ' + this._last_name
+    }
+
 
 }
 
 let new_person = new Person('Juan', 'Juarez'); // instanciando la clase
-
-console.log(new_person)
+console.log(new_person.showData())
 
 // new_person.greeting(); // this isn't possible
 Person.greeting(); // this is possible
@@ -47,3 +56,8 @@ Person.greeting(); // this is possible
 Person.greeting2(new_person);
 
 console.log(new_person.email); // object attribute
+
+
+
+let new_person2 = new Person('Juanita', 'Jacinto'); // instanciando la clase
+console.log(new_person2.showData())
