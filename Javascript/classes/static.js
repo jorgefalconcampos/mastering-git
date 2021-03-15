@@ -1,7 +1,13 @@
 class Person{
+
+    static counter = 0; // class attribute
+
+    email = "default_email@mail.com" // object attribute
+
     constructor(name, last_name){
         this._name = name;
         this._last_name = last_name;
+        Person.counter++;
     }
 
     get name(){
@@ -39,3 +45,5 @@ console.log(new_person)
 Person.greeting(); // this is possible
 
 Person.greeting2(new_person);
+
+console.log(new_person.email); // object attribute
