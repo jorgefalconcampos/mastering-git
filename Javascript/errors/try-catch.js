@@ -9,3 +9,6 @@ catch(err){
     console.log(error);
     // console.error(err);
 }
+finally{
+    console.log("Wether fails or not, this will be executed");
+}
