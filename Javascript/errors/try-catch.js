@@ -3,10 +3,11 @@
 
 try{
     // since we're using strict mode, the x variable statement will result on an error
-    x = 10;
+    let x = 10;
+    if (x > 5) throw 'Limit exceeded!!';
 }
 catch(err){
-    console.log(error);
+    console.log(err);
     // console.error(err);
 }
 finally{
