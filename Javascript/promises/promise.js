@@ -8,4 +8,11 @@ let miPromise = new Promise((resolve, reject) => {
     }
 });
 
-miPromise.then(value => console.log(value), err => console.log(err));
+miPromise.then(
+    value => console.log(value), 
+    err => console.log(err)
+);
+
+miPromise
+    .then(value => console.log(value))
+    .catch(err => console.log(err));
